@@ -1,4 +1,4 @@
-name: Type conversion
+name: digits_and_number_beginner_homework
 on: [push]
 jobs:
   build:
@@ -21,6 +21,11 @@ jobs:
       - name: Install pytest
         run: |
           pip install pytest
+          pip install requests
       - name: Run tests
         run: |
           pytest -v --tb=no -q
+          ls
+      - name: Send requests
+        run: |
+          python test/sendtest.py ${{github.actor}} '${{github.repository}}'
