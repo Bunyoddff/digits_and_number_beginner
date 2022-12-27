@@ -11,6 +11,6 @@ def get_length(num):
     # return number of digits in integer
     x=len(str(num))
     return x
-print(get_length(7)) 
+#print(get_length(7)) 
 
  
