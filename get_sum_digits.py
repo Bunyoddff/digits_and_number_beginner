@@ -8,5 +8,9 @@ def get_sum_digits(num):
     Returns:
         int: the sum of digits
     """
+    sum=0
+    for digit in str(num):
+        sum+=int(digit)
     # return sum of digits in integer
-    return  
+    return  sum
+#print(get_sum_digits(23243))
